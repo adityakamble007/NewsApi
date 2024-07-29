@@ -10,7 +10,7 @@ function App() {
     )
       .then((response) => response.json())
       .then((data) => {
-        setNewsList(data.articles.slice(0, 10)); // Only take the first 10 articles
+        setNewsList(data.articles.slice(0, 10));
       });
   }, []);
 
